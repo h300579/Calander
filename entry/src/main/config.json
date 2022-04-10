@@ -11,7 +11,7 @@
   "module": {
     "package": "com.example.calander",
     "name": ".MyApplication",
-    "mainAbility": "com.example.calander.MainAbility",
+    "mainAbility": "com.example.calander.Learning",
     "deviceType": [
       "phone",
       "tablet",
@@ -43,6 +43,28 @@
         "icon": "$media:icon",
         "description": "$string:mainability_description",
         "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home",
+              "abilityslice1",
+              "abilityslice2"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "com.example.calander.Learning",
+        "icon": "$media:icon",
+        "description": "$string:learning_description",
+        "label": "$string:entry_Learning",
         "type": "page",
         "launchType": "standard"
       }

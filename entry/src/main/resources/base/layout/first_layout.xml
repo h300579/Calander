@@ -3,29 +3,26 @@
     xmlns:ohos="http://schemas.huawei.com/res/ohos"
     ohos:height="match_parent"
     ohos:width="match_parent"
-    ohos:alignment="center"
-    ohos:orientation="vertical">
+    ohos:orientation="vertical"
+    ohos:padding="32">
 
     <Text
-        ohos:id="$+id:text_helloworld"
+        ohos:id="$+id:text"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:background_element="$graphic:background_ability_main"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="$string:mainability_HelloWorld"
-        ohos:text_size="40vp"
+        ohos:text="My name is Text."
+        ohos:text_size="25fp"
         />
 
     <Button
-        ohos:id="$+id:btn_add"
+        ohos:id="$+id:button"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:text_size="18fp"
         ohos:layout_alignment="horizontal_center"
-        ohos:background_element="$graphic:background_ability_main"
-        ohos:text_color="white"
-        ohos:padding="15vp"
-        ohos:text="单机+1"
+        ohos:margin="50"
+        ohos:text="My name is Button"
+        ohos:text_size="50"
         />
 
 </DirectionalLayout>

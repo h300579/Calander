@@ -6,13 +6,13 @@ import ohos.aafwk.content.Intent;
 import ohos.agp.components.Component;
 import ohos.agp.components.Text;
 
-public class MainAbilitySlice extends AbilitySlice {
+public class LearningSlice extends AbilitySlice {
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
-        super.setUIContent(ResourceTable.Layout_first_layout);
+        super.setUIContent(ResourceTable.Layout_ability_learning);
 
-        Text btn = (Text)findComponentById(ResourceTable.Id_text);
+        Text btn = (Text)findComponentById(ResourceTable.Id_text_helloworld);
         btn.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
@@ -20,16 +20,6 @@ public class MainAbilitySlice extends AbilitySlice {
                 present(new AbilitySlice1(), intent1);
             }
         });
-
-        //        Text text = (Text)findComponentById(ResourceTable.Id_text_helloworld);
-//        Button button = (Button)findComponentById(ResourceTable.Id_btn_add);
-//        button.setClickedListener(new Component.ClickedListener() {
-//            @Override
-//            public void onClick(Component component) {
-//                count++;
-//                text.setText(count + "");
-//            }
-//        });
     }
 
     @Override
